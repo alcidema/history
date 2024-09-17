@@ -1,5 +1,6 @@
 from django.db import models
 # from django.contrib.postgres.fields import ArrayField
+from taggit.managers import TaggableManager
 
 
 class Event(models.Model):
@@ -11,3 +12,5 @@ class Event(models.Model):
     # sources = ArrayField(models.IntegerField())
 
     public = models.BooleanField(default=False)
+
+    tags = TaggableManager()
