@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'taggit',
+    'django_extensions',
 
     'users',
     'events',
